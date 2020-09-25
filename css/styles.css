@@ -1,3 +1,8 @@
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px;
+}
+
 .row-header {
   margin: 0px auto;
   padding: 0px 0px;
@@ -5,18 +10,18 @@
 .row-content {
   margin: 0px auto;
   padding: 50px 0px;
-  border-bottom: 1px ridge;
+
   min-height: 400px;
 }
 .footer {
-  background-color: #d1c4e9;
+  background-color: #303846;
   margin: 0px auto;
   padding: 20px 0px;
 }
 .jumbotron {
   margin: 0px auto;
   padding: 70px 30px;
-  background: #9575cd;
+  background: #303846;
   color: floralwhite;
 }
 address {
@@ -25,11 +30,11 @@ address {
   color: #0f0f0f;
 }
 body {
-  padding: 50px 0px 0px 0px;
+  padding: 70px 0px 0px 0px;
   z-index: 0;
 }
 .navbar-dark {
-  background-color: #512da8;
+  background-color: #1c1e21;
 }
 .tab-content {
   border-left: 1px solid #ddd;
@@ -38,7 +43,7 @@ body {
   padding: 10px;
 }
 .carousel {
-  background: #512da8;
+  background: #00c9cc;
 }
 .carousel .carousel-item {
   height: 300px;
@@ -72,4 +77,15 @@ body {
 
 .modal-body {
   background-color: #9575cd;
+}
+
+.cards {
+  background-color: #33363b;
+  border-radius: 10px;
+  border: none;
+}
+
+.rule {
+  border-top: solid 2px #646464;
+  margin-bottom: 2vmax;
 }

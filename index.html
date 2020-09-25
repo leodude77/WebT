@@ -26,7 +26,7 @@
     <title>Ristorante Con Fusion</title>
   </head>
 
-  <body>
+  <body style="background-color: #121212">
     <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
       <div class="container">
         <button
@@ -38,7 +38,7 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <a class="navbar-brand" href="#"
-          ><img src="img/logo.png" width="41" height="30"
+          ><img src="img/aes.png" style="max-block-size: 3rem"
         /></a>
         <div class="collapse navbar-collapse" id="Navbar">
           <ul class="navbar-nav mr-auto">
@@ -63,263 +63,47 @@
               >
             </li>
           </ul>
-
-          <span class="navbar-text">
-            <a id="login"> <span class="fa fa-sign-in"></span> Login</a>
-          </span>
         </div>
       </div>
     </nav>
 
-    <div id="loginModal" class="modal fade" role="dialog">
-      <div class="modal-dialog modal-lg" role="content">
-        <!-- Modal content-->
-        <div class="modal-content">
-          <div class="modal-header">
-            <h4 class="modal-title">Login</h4>
-            <button type="button" class="close" id="closebutton">
-              &times;
-            </button>
-          </div>
-          <div class="modal-body">
-            <form>
-              <div class="form-row">
-                <div class="form-group col-sm-4">
-                  <label class="sr-only" for="exampleInputEmail3"
-                    >Email address</label
-                  >
-                  <input
-                    type="email"
-                    class="form-control form-control-sm mr-1"
-                    id="exampleInputEmail3"
-                    placeholder="Enter email"
-                  />
-                </div>
-                <div class="form-group col-sm-4">
-                  <label class="sr-only" for="exampleInputPassword3"
-                    >Password</label
-                  >
-                  <input
-                    type="password"
-                    class="form-control form-control-sm mr-1"
-                    id="exampleInputPassword3"
-                    placeholder="Password"
-                  />
-                </div>
-                <div class="col-sm-auto">
-                  <div class="form-check">
-                    <input class="form-check-input" type="checkbox" />
-                    <label class="form-check-label"> Remember me </label>
-                  </div>
-                </div>
-              </div>
-              <div class="form-row">
-                <button
-                  type="button"
-                  class="btn btn-secondary btn-sm ml-auto"
-                  id="cancelbutton"
-                >
-                  Cancel
-                </button>
-                <button type="submit" class="btn btn-primary btn-sm ml-1">
-                  Sign in
-                </button>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-
     <header class="jumbotron">
       <div class="container">
         <div class="row row-header">
-          <div class="col-12 col-sm-6">
-            <h1>Ristorante con Fusion</h1>
+          <div class="col-12 col-md-6">
+            <h1>AES Encyption with Steganography</h1>
             <p>
               We take inspiration from the World's best cuisines, and create a
               unique fusion experience. Our lipsmacking creation will tickle
               your culinary senses!
             </p>
           </div>
-          <div class="col-12 col-sm-3 align-self-center">
-            <img src="img/logo.png" class="img-fluid" />
-          </div>
-          <div class="col-12 col-sm-3 align-self-center">
-            <!-- <input
-              type="button"
-              value="Reserve Table"
-              style="font-weight: bold"
-              class="btn btn-warning btn-lg btn-block"
-              onClick="document.getElementById('reserve').scrollIntoView();"
-            /> -->
-            <a
-              role="button"
-              class="btn btn-block nav-link btn-warning"
-              id="reservetable"
-              >Reserve Table</a
-            >
-            <!-- <button type="button" class="btn btn-warning btn-lg btn-block">
-              Reserve Table
-            </button> -->
+          <div class="col-12 col-md-6 align-items-center">
+            <img src="img/aes.png" class="img-fluid" />
           </div>
         </div>
-        <div id="reserveModal" class="modal fade" role="dialog">
-          <div class="modal-dialog modal-lg" role="content">
-            <!-- Modal content-->
-            <div class="modal-content">
-              <div class="modal-header">
-                <h4 class="modal-title">Reserve a table</h4>
-                <button type="button" class="close" data-dismiss="modal">
-                  &times;
-                </button>
-              </div>
-              <div class="modal-body">
-                <form id="reserve">
-                  <div class="form-group row">
-                    <label for="guests" class="col-md-2 col-form-label"
-                      ><h5>Number of Guests</h5></label
-                    >
-                    <div class="col-md">
-                      <div class="form-check form-check-inline">
-                        <input
-                          class="form-check-input"
-                          type="radio"
-                          name="inlineRadioOptions"
-                          id="inlineradio1"
-                          value="option1"
-                        /><label class="form-check-label" for="inlineradio1"
-                          >1</label
-                        >
-                      </div>
-                      <div class="form-check form-check-inline">
-                        <input
-                          class="form-check-input"
-                          type="radio"
-                          name="inlineRadioOptions"
-                          id="inlineradio2"
-                          value="option2"
-                        /><label class="form-check-label" for="inlineradio2"
-                          >2</label
-                        >
-                      </div>
-                      <div class="form-check form-check-inline">
-                        <input
-                          class="form-check-input"
-                          type="radio"
-                          name="inlineRadioOptions"
-                          id="inlineradio3"
-                          value="option3"
-                        /><label class="form-check-label" for="inlineradio2"
-                          >3</label
-                        >
-                      </div>
-                      <div class="form-check form-check-inline">
-                        <input
-                          class="form-check-input"
-                          type="radio"
-                          name="inlineRadioOptions"
-                          id="inlineradio4"
-                          value="option4"
-                        /><label class="form-check-label" for="inlineradio2"
-                          >4</label
-                        >
-                      </div>
-                      <div class="form-check form-check-inline">
-                        <input
-                          class="form-check-input"
-                          type="radio"
-                          name="inlineRadioOptions"
-                          id="inlineradio5"
-                          value="option5"
-                        /><label class="form-check-label" for="inlineradio2"
-                          >5</label
-                        >
-                      </div>
-                      <div class="form-check form-check-inline">
-                        <input
-                          class="form-check-input"
-                          type="radio"
-                          name="inlineRadioOptions"
-                          id="inlineradio6"
-                          value="option6"
-                        /><label class="form-check-label" for="inlineradio2"
-                          >6</label
-                        >
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="form-group row">
-                    <label for="section" class="col-md-2 col-form-label">
-                      <h5>Section</h5>
-                    </label>
-                    <div class="col-md-5 btn-group">
-                      <input
-                        type="button"
-                        class="active btn btn-success"
-                        id="noSmoking"
-                        value="NO-Smoking"
-                      />
-                      <input
-                        type="button"
-                        class="btn btn-danger"
-                        id="Smoking"
-                        value="Smoking"
-                      />
-                    </div>
-                  </div>
-
-                  <div class="form-group row">
-                    <label for="date&time" class="col-md-2 col-form-label">
-                      <h5>Date and Time</h5>
-                    </label>
-                    <div class="col-md-5">
-                      <input
-                        type="text"
-                        class="form-control"
-                        id="date"
-                        name="date"
-                        placeholder="Date"
-                      />
-                    </div>
-                    <div class="col-md-5">
-                      <input
-                        type="text"
-                        class="form-control"
-                        id="time"
-                        name="time"
-                        placeholder="Time"
-                      />
-                    </div>
-                  </div>
-                  <div class="form-group row">
-                    <div class="col col-md-4 offset-2">
-                      <button
-                        id="cancel"
-                        type="button"
-                        class="btn btn-secondary"
-                      >
-                        Cancel
-                      </button>
-                      <button type="submit" class="btn btn-primary">
-                        Reserve
-                      </button>
-                    </div>
-                  </div>
-                </form>
-              </div>
-            </div>
-          </div>
+        <div style="padding-left: 15px">
+          <a href="#steganography">
+            <input class="btn btn-info" type="button" value="Input" />
+          </a>
         </div>
       </div>
     </header>
 
     <div class="container">
       <div class="row row-content">
-        <div class="col">
-          <div id="mycarousel" class="carousel slide" data-ride="carousel">
-            <div class="carousel-inner" role="listbox">
+        <div class="col" style="padding-left: 0px; padding-right: 0px">
+          <div
+            id="mycarousel"
+            class="carousel slide"
+            data-ride="carousel"
+            style="border-radius: 10px"
+          >
+            <div
+              class="carousel-inner"
+              role="listbox"
+              style="border-radius: 10px"
+            >
               <div class="carousel-item active">
                 <img
                   class="d-block img-fluid"
@@ -409,195 +193,77 @@
             >
               <span class="carousel-control-next-icon"></span>
             </a>
-
-            <div class="btn-group" id="mycarouselButton">
-              <button class="btn btn-secondary btn-sm" id="carouselButton">
-                <span class="fa fa-pause"></span>
-              </button>
-            </div>
           </div>
         </div>
       </div>
 
-      <div class="row row-content align-items-center">
-        <div class="col-12 col-sm-4 order-sm-last col-md-3">
-          <h3>Our Lipsmacking Culinary Creations</h3>
+      <div style="padding: 15px"></div>
+
+      <div
+        class="align-items-center cards"
+        id="aes"
+        style="color: white; padding: 1vmax;"
+      >
+        <div class="text-center p-3">
+          <h3 style="font-family: Trebuchet MS; font-size: 4vmax">
+            <b>AES Encryption</b>
+          </h3>
         </div>
-        <div class="col col-sm order-sm-first col-md">
-          <div class="media">
+        <div class="rule offset-sm-2 col-10 offset-1 col-sm-8"></div>
+
+        <div class="row align-items-center">
+          <div class="media col-sm-6 col-12">
             <img
               class="d-flex mr-3 img-thumbnail align-self-center"
-              src="img/uthappizza.png"
+              src="./img/AES-SubBytes.svg"
               alt="uthappizza"
+              style="background: transparent; border: none"
             />
-            <div class="media-body">
-              <h2 class="mt-0">
-                Uthappizza <span class="badge badge-danger">Hot</span>
-                <span class="badge badge-pill badge-secondary">$4.99</span>
-              </h2>
-              <p class="d-none d-sm-block">
-                A unique combination of Indian Uthappam (pancake) and Italian
-                pizza, topped with Cerignola olives, ripe vine cherry tomatoes,
-                Vidalia onion, Guntur chillies and Buffalo Paneer.
-              </p>
-            </div>
+          </div>
+          <div class="media-body col-sm-6 col-12">
+            <p>
+              AES is based on a design principle known as a
+              substitution–permutation network, and is efficient in both
+              software and hardware.[9] Unlike its predecessor DES, AES does not
+              use a Feistel network. AES is a variant of Rijndael, with a fixed
+              block size of 128 bits, and a key size of 128, 192, or 256 bits.
+            </p>
           </div>
         </div>
       </div>
-
-      <div class="row row-content align-items-center">
-        <div class="col-12 col-sm-4 col-md-3">
-          <h2>This Month's Promotions</h2>
-        </div>
-        <div class="col-12 col-sm col-md">
-          <div class="media">
-            <div class="media-body">
-              <h2 class="mt-0">
-                <div class="col col-sm col-md">
-                  Weekend Grand Buffet
-                  <span class="badge badge-danger">NEW</span>
-                </div>
-              </h2>
-              <p class="d-none d-sm-block">
-                Featuring mouthwatering combinations with a choice of five
-                different salads, six enticing appetizers, six main entrees and
-                five choicest desserts. Free flowing bubbly and soft drinks. All
-                for just $19.99 per person
-              </p>
-            </div>
-            <img
-              class="d-flex mr-3 img-thumbnail align-self-center"
-              src="img/buffet.png"
-              alt="uthappizza"
-            />
-          </div>
-        </div>
-      </div>
-
-      <div class="row row-content align-items-center">
-        <div class="col-12 col-sm-4 order-sm-last col-md-3">
-          <h3>Meet our Culinary Specialists</h3>
-        </div>
-        <div class="col col-sm order-sm-first col-md">
-          <div class="media">
-            <img
-              class="d-flex mr-3 img-thumbnail align-self-center"
-              src="img/alberto.png"
-              alt="alberto"
-            />
-
-            <div class="media-body">
-              <h2 class="mt-0">Alberto Somayya</h2>
-              <h4>Executive Chef</h4>
-              <p class="d-none d-sm-block">
-                Award winning three-star Michelin chef with wide International
-                experience having worked closely with whos-who in the culinary
-                world, he specializes in creating mouthwatering Indo-Italian
-                fusion experiences.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-
+      <div style="padding: 15px"></div>
       <br />
-      <div class="col align-self-center">
-        <h2 class="card-header bg-warning text-white">Reserve a Table</h2>
+      <div
+        class="align-items-center cards"
+        id="steganography"
+        style="color: white; padding: 1vmax;"
+      >
+        <div class="text-center p-3">
+          <h3 style="font-family: Trebuchet MS; font-size: 4vmax">
+            <b>Steganography</b>
+          </h3>
+        </div>
+        <div class="rule offset-sm-2 col-10 offset-1 col-sm-8"></div>
 
-        <form name="reserve" id="reserve">
-          <div class="form-group row">
-            <label for="guests" class="col-md-2 col-form-label"
-              ><h5>Number of Guests</h5></label
-            >
-            <div class="col-md">
-              <div class="form-check form-check-inline">
-                <input
-                  class="form-check-input"
-                  type="radio"
-                  name="inlineRadioOptions"
-                  id="inlineradio1"
-                  value="option1"
-                /><label class="form-check-label" for="inlineradio1">1</label>
-              </div>
-              <div class="form-check form-check-inline">
-                <input
-                  class="form-check-input"
-                  type="radio"
-                  name="inlineRadioOptions"
-                  id="inlineradio2"
-                  value="option2"
-                /><label class="form-check-label" for="inlineradio2">2</label>
-              </div>
-              <div class="form-check form-check-inline">
-                <input
-                  class="form-check-input"
-                  type="radio"
-                  name="inlineRadioOptions"
-                  id="inlineradio3"
-                  value="option3"
-                /><label class="form-check-label" for="inlineradio2">3</label>
-              </div>
-              <div class="form-check form-check-inline">
-                <input
-                  class="form-check-input"
-                  type="radio"
-                  name="inlineRadioOptions"
-                  id="inlineradio4"
-                  value="option4"
-                /><label class="form-check-label" for="inlineradio2">4</label>
-              </div>
-              <div class="form-check form-check-inline">
-                <input
-                  class="form-check-input"
-                  type="radio"
-                  name="inlineRadioOptions"
-                  id="inlineradio5"
-                  value="option5"
-                /><label class="form-check-label" for="inlineradio2">5</label>
-              </div>
-              <div class="form-check form-check-inline">
-                <input
-                  class="form-check-input"
-                  type="radio"
-                  name="inlineRadioOptions"
-                  id="inlineradio6"
-                  value="option6"
-                /><label class="form-check-label" for="inlineradio2">6</label>
-              </div>
-            </div>
+        <div class="row align-items-center">
+          <div class="media col-sm-6 col-12">
+            <img
+              class="d-flex mr-3 img-thumbnail align-self-center"
+              src="./img/steg_diag.png"
+              alt="uthappizza"
+              style="background: transparent; border: none; border-radius: 10px;"
+            />
           </div>
-          <div class="form-group row">
-            <label for="date&time" class="col-md-2 col-form-label">
-              <h5>Date and Time</h5>
-            </label>
-            <div class="col-md-5">
-              <input
-                type="text"
-                class="form-control"
-                id="date"
-                name="date"
-                placeholder="Date"
-              />
-            </div>
-            <div class="col-md-5">
-              <input
-                type="text"
-                class="form-control"
-                id="time"
-                name="time"
-                placeholder="Time"
-              />
-            </div>
+          <div class="media-body col-sm-6 col-12">
+            <p>
+              Steganography is the practice of concealing a file, message, image, or video within another file, message, image, or video. The word steganography comes from Greek steganographia, which combines the words steganós, meaning "covered or concealed", and -graphia meaning "writing". 
+            </p>
           </div>
-          <div class="form-group row">
-            <div class="col col-md-4 offset-2">
-              <button type="submit" class="btn btn-primary">Reserve</button>
-            </div>
-          </div>
-        </form>
+        </div>
       </div>
-    </div>
     <br />
+
+    <div style="padding: 5px"></div>
 
     <footer class="footer">
       <div class="container">
