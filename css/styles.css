@@ -89,3 +89,7 @@ body {
   border-top: solid 2px #646464;
   margin-bottom: 2vmax;
 }
+
+.text {
+  font-family: Helvetica, sans-serif;
+}

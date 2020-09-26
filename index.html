@@ -48,18 +48,8 @@
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./aboutus.html"
-                ><span class="fa fa-info fa-lg"></span> About</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#"
-                ><span class="fa fa-list fa-lg"></span> Menu</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./contactus.html"
-                ><span class="fa fa-address-card fa-lg"></span> Contact</a
+              <a class="nav-link" href="#intro"
+                ><span class="fa fa-info fa-lg"></span> Introduction</a
               >
             </li>
           </ul>
@@ -72,27 +62,33 @@
         <div class="row row-header">
           <div class="col-12 col-md-6">
             <h1>AES Encyption with Steganography</h1>
-            <p>
-              We take inspiration from the World's best cuisines, and create a
-              unique fusion experience. Our lipsmacking creation will tickle
-              your culinary senses!
+            <p style="padding-top: 30px">
+              In today's world, where data is exchanged around the world in mere seconds is also prone to malicious intervention. This site helps implement one of the many methods to encrypt data. Encryption enhances the security of a message or file by scrambling the content. To encrypt a message, you need the right key, and you need the right key to decrypt it as well.It is the most effective way to hide communication via encoded information where the sender and the recipient hold the key to decipher data.
             </p>
           </div>
           <div class="col-12 col-md-6 align-items-center">
             <img src="img/aes.png" class="img-fluid" />
           </div>
         </div>
-        <div style="padding-left: 15px">
-          <a href="#steganography">
-            <input class="btn btn-info" type="button" value="Input" />
-          </a>
+        <div class="row ">
+          
+          <div class=" col-12 col-md-2" style="padding-left: 15px; padding-top: 15px;">
+            <a href="#aes">
+              <input class="btn btn-info" type="button" value="What is AES?" />
+            </a>
+          </div>
+          <div class=" col-12 col-md" style="padding-left: 15px; padding-top: 15px;">
+            <a href="#steganography">
+              <input class="btn btn-info" type="button" value="What is Steganography?" />
+            </a>
+          </div>
         </div>
       </div>
     </header>
 
     <div class="container">
-      <div class="row row-content">
-        <div class="col" style="padding-left: 0px; padding-right: 0px">
+      <div class="row row-content" >
+        <div class="col" style="padding-left: 0px; padding-right: 0px" id="intro">
           <div
             id="mycarousel"
             class="carousel slide"
@@ -107,21 +103,23 @@
               <div class="carousel-item active">
                 <img
                   class="d-block img-fluid"
-                  src="img/uthappizza.png"
+                  src="img/Lock.png"
                   alt="uthappizza"
+                  style="max-block-size: 1vmax; padding:10px;"
                 />
                 <div
                   class="carousel-caption d-none d-md-block align-self-center align-items-center"
                 >
-                  <h2>
-                    Uthappizza <span class="badge badge-danger">Hot</span>
-                    <span class="badge badge-pill badge-secondary">$4.99</span>
+                  <h2 >
+                    Basic Requirements <span class="badge badge-danger">Imp</span>
+                    
                   </h2>
-                  <p class="d-none d-sm-block">
-                    A unique combination of Indian Uthappam (pancake) and
-                    Italian pizza, topped with Cerignola olives, ripe vine
-                    cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo
-                    Paneer.
+                  <p class="d-none d-sm-block" >
+                    <ul style="font-size: 20px; text-align: left;" >
+                      <li >Key</li>
+                      <li >Image </li>
+                      <li >Message to be encrypted </li>
+                    </ul>
                   </p>
                 </div>
               </div>
@@ -136,16 +134,18 @@
                 >
                   <h2>
                     <div class="col col-sm col-md">
-                      Weekend Grand Buffet
+                      Encryption
                       <span class="badge badge-danger">NEW</span>
                     </div>
                   </h2>
                   <p class="d-none d-sm-block">
-                    Featuring mouthwatering combinations with a choice of five
-                    different salads, six enticing appetizers, six main entrees
-                    and five choicest desserts. Free flowing bubbly and soft
-                    drinks. All for just $19.99 per person
+                    Dummy
                   </p>
+                  <div class=" col-12 col-md" style="padding-left: 15px; padding-top: 15px;">
+                    <a href="#">
+                      <input class="btn btn-dark" type="button" value="Start Encryption!" />
+                    </a>
+                  </div>
                 </div>
               </div>
               <div class="carousel-item">
@@ -157,14 +157,16 @@
                 <div
                   class="carousel-caption d-none d-md-block align-self-center align-items-center"
                 >
-                  <h2>Alberto Somayya</h2>
-                  <h4>Executive Chef</h4>
+                  <h2>Decryption</h2>
+                  
                   <p class="d-none d-sm-block">
-                    Award winning three-star Michelin chef with wide
-                    International experience having worked closely with whos-who
-                    in the culinary world, he specializes in creating
-                    mouthwatering Indo-Italian fusion experiences.
+                    Dummy
                   </p>
+                  <div class=" col-12 col-md" style="padding-left: 15px; padding-top: 15px;">
+                    <a href="#">
+                      <input class="btn btn-dark" type="button" value="Start Decryption!" />
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -197,7 +199,7 @@
         </div>
       </div>
 
-      <div style="padding: 15px"></div>
+      <div style="padding: 5px"></div>
 
       <div
         class="align-items-center cards"
@@ -212,22 +214,25 @@
         <div class="rule offset-sm-2 col-10 offset-1 col-sm-8"></div>
 
         <div class="row align-items-center">
-          <div class="media col-sm-6 col-12">
+          
+          <div class="media-body col-sm-6 col-12 text order-last order-sm-first">
+            <p style="padding: 5px;">
+              The Advanced Encryption Standard (AES), also known by its original name Rijndael, is a specification for the encryption of electronic data established by the U.S. National Institute of Standards and Technology (NIST) in 2001.
+              AES is a subset of the Rijndael block cipher developed by two Belgian cryptographers, Vincent Rijmen and Joan Daemen.
+              AES is based on a design principle known as a
+              substitution–permutation network, and is efficient in both
+              software and hardware. Unlike its predecessor DES, AES does not
+              use a Feistel network. AES is a variant of Rijndael, with a fixed
+              block size of 128 bits, and a key size of 128, 192, or 256 bits.
+            </p>
+          </div>
+          <div class="media col-sm-6 col-12 order-first order-sm-last">
             <img
               class="d-flex mr-3 img-thumbnail align-self-center"
               src="./img/AES-SubBytes.svg"
               alt="uthappizza"
               style="background: transparent; border: none"
             />
-          </div>
-          <div class="media-body col-sm-6 col-12">
-            <p>
-              AES is based on a design principle known as a
-              substitution–permutation network, and is efficient in both
-              software and hardware.[9] Unlike its predecessor DES, AES does not
-              use a Feistel network. AES is a variant of Rijndael, with a fixed
-              block size of 128 bits, and a key size of 128, 192, or 256 bits.
-            </p>
           </div>
         </div>
       </div>
@@ -254,78 +259,35 @@
               style="background: transparent; border: none; border-radius: 10px;"
             />
           </div>
-          <div class="media-body col-sm-6 col-12">
-            <p>
+          <div class="media-body col-sm-6 col-12 text p-2">
+            <p style="padding: 10px;">
               Steganography is the practice of concealing a file, message, image, or video within another file, message, image, or video. The word steganography comes from Greek steganographia, which combines the words steganós, meaning "covered or concealed", and -graphia meaning "writing". 
+              Steganography works by hiding information in a way that doesn’t arouse suspicion. One of the most popular techniques is 'least significant bit (LSB) steganography. In this type of steganography, the information hider embeds the secret information in the least significant bits of a media file.
             </p>
           </div>
         </div>
       </div>
     <br />
 
-    <div style="padding: 5px"></div>
+    <div style="padding: 15px"></div>
 
     <footer class="footer">
       <div class="container">
         <div class="row">
           <div class="col-4 offset-1 col-sm-2">
-            <h5>Links</h5>
-            <ul class="list-unstyled">
+            <h5 style="color: white;">Links</h5>
+            <ul class="list-unstyled" >
               <li><a href="#">Home</a></li>
-              <li><a href="./aboutus.html">About</a></li>
-              <li><a href="#">Menu</a></li>
-              <li><a href="./contactus.html">Contact</a></li>
+              <li><a href="#intro">Start Encryption</a></li>
+              <li><a href="#aes">Information</a></li>
             </ul>
           </div>
-          <div class="col-7 col-sm-5">
-            <h5>Our Address</h5>
-            <address>
-              121, Clear Water Bay Road<br />
-              Clear Water Bay, Kowloon<br />
-              HONG KONG<br />
-              <i class="fa fa-phone fa-lg"></i> +852 1234 5678<br />
-              <i class="fa fa-fax fa-lg"></i>: +852 8765 4321<br />
-              <i class="fa fa-envelope fa-lg"></i>
-              <a href="mailto:confusion@food.net">confusion@food.net</a>
-            </address>
-          </div>
-          <div class="col-12 col-sm-4 align-self-center">
-            <div class="text-center">
-              <a
-                class="btn btn-social-icon btn-google"
-                href="http://google.com/+"
-              >
-                <i class="fa fa-google-plus fa-lg"></i
-              ></a>
-              <a
-                class="btn btn-social-icon btn-google"
-                href="http://www.facebook.com/profile.php?id="
-                ><i class="fa fa-facebook fa-lg"></i
-              ></a>
-              <a
-                class="btn btn-social-icon btn-facebook"
-                href="http://www.linkedin.com/in/"
-                ><i class="fa fa-linkedin fa-lg"></i
-              ></a>
-              <a
-                class="btn btn-social-icon btn-twitter"
-                href="http://twitter.com/"
-                ><i class="fa fa-twitter fa-lg"></i
-              ></a>
-              <a
-                class="btn btn-social-icon btn-youtube"
-                href="http://youtube.com/"
-                ><i class="fa fa-youtube fa-lg"></i
-              ></a>
-              <a class="btn btn-social-icon" href="mailto:"
-                ><i class="fa fa-envelope fa-lg"></i
-              ></a>
-            </div>
-          </div>
+          
+          
         </div>
         <div class="row justify-content-center">
           <div class="col-auto">
-            <p>© Copyright 2018 Ristorante Con Fusion</p>
+            <p style="color: whitesmoke;">© Copyright 2020 RNS Bois</p>
           </div>
         </div>
       </div>
